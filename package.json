@@ -24,8 +24,5 @@
   "dependencies": {
     "got": "^6.3.0",
     "through2": "^2.0.1"
-  },
-  "devDependencies": {
-    "commander": "^2.9.0"
   }
 }
