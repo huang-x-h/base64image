@@ -10,20 +10,20 @@ image base64 encoder
 
 **Node.js 4 or higher**
 
-    $ npm install @huang.xinghui/base64image --save
+    $ npm install base64-image-encoder --save
 
 ## Usage
 
 ```js
 // Stream Usage
-var base64image = require('@huang.xinghui/base64image')
+var base64image = require('base64-image-encoder')
 // imagePath can be a url path, such as 'http://example.com/assets/img.png'
 // or a absolute path, such as 'C:/foo/img.png'
 // or a releative path, such as './img.png'
 base64image.stream(imagePath).pipe(process.stdout)
 
 // Common Usage
-var base64image = require('@huang.xinghui/base64image')
+var base64image = require('base64-image-encoder')
 base64image(imagePath).then(function(data) {
   console.log(data)
 })
@@ -32,6 +32,9 @@ base64image(imagePath).then(function(data) {
 ## API
 
 - base64image(imagePath)
+
     base64 encode image, return `Promise`    
+
 - base64image.stream(imagePath)
+
     base64 encode image, return `Stream`
